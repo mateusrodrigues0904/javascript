@@ -1,0 +1,65 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: #2F323A;
+    color: white;
+}
+h1{
+    text-align: center;
+    margin: 2rem;
+}
+section{
+    font-size: 1.2rem;
+    background-image: linear-gradient(to bottom, #0ABF58, #00A878);
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.322);
+}
+.opcao1{
+    padding-top: 20px;
+    margin-left: 20px;
+}
+.opcao2{
+    margin-left: 20px;
+}
+.opcao2 p{
+    display:inline;
+    padding-right: 5px;
+}
+#iverificar{
+    margin-top: 10px;
+    padding: 2px;
+    font-size: 1.2rem;
+    background-color: #0ABFBF;
+    color: white;
+    border: 1px solid #0a8d8d;
+}
+#iverificar:hover{
+    background-color: #0a8d8d;
+    border: 1px solid #0ABFBF;
+}
+#imsg{
+    text-align: center;
+    padding: 10px 0px;
+}
+#ifoto{
+    opacity: 0.2;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 50%;
+}
+body > p{
+    text-align: center;
+    padding-top: 20px;
+    font-style: italic;
+}
