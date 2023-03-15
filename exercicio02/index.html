@@ -20,11 +20,11 @@
         <div class="opcao2">
             <p>Sexo:</p>
             <label for="isexo">Masculino</label>
-            <input type="radio" name="sexo" id="isexo">
+            <input type="radio" name="sexo" id="isexo" value="M">
             <label for="isexo">Feminino</label>
-            <input type="radio" name="sexo" id="isexo">
+            <input type="radio" name="sexo" id="isexo" value="F">
             <br>
-            <input id="iverificar" type="submit" value="Verificar">
+            <input id="iverificar" type="submit" value="Verificar" onclick="verificar()">
         </div>
         <p id="imsg">
             idofhasiof
@@ -36,5 +36,14 @@
     <p>
         @mateusrodrigues0904
     </p>
+    <script>
+        function verificar(){
+            var nas = +document.getElementById("inas").value
+            var sexo = document.querySelector('input[name="sexo"]:checked').value
+            var msg = document.getElementById("imsg")
+            var idade = new Date().getFullYear() - nas
+            msg.innerHTML = idade
+        }
+    </script>
 </body>
 </html>
